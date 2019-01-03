@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="DLL-Source">
+      <UniqueIdentifier>{f2d93103-4305-4a38-bd9d-c9f2a20a9b6d}</UniqueIdentifier>
+      <Extensions>.cpp</Extensions>
+    </Filter>
+    <Filter Include="DLL-Header">
+      <UniqueIdentifier>{bc356152-8828-4cf2-9c7c-7266eb24c1bf}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Parabot-Source">
+      <UniqueIdentifier>{b93718fa-b500-44c6-b40b-0615f52a8b32}</UniqueIdentifier>
+      <Extensions>.cpp</Extensions>
+    </Filter>
+    <Filter Include="Parabot-Header">
+      <UniqueIdentifier>{acae3bd0-e570-40cd-a5f0-11447240cd5f}</UniqueIdentifier>
+      <Extensions>.h</Extensions>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{3e5e0038-c797-4905-9fc5-c6a0814b9626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HL-Source">
+      <UniqueIdentifier>{b16e8392-acc7-4f84-948a-10bfbd863959}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="bot\bot.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\bot_client.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\commands.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\dll.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\engine.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\h_export.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\linkfunc.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\startframe.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dlls\util.cpp">
+      <Filter>DLL-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\marker.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\parabot.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_action.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_cell.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_chat.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_combat.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_combatgoals.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_configuration.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_focus.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_global.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_goalfinder.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_goals.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_journey.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_kills.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_mapcells.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_mapgraph.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_mapimport.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_navpoint.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_needs.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_observer.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_path.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_perception.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_roaming.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_sectors.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_vistable.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_weapon.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pb_weaponhandling.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pbt_dynarray.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\pbt_priorityqueue.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\sounds.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="bot\utilityfuncs.cpp">
+      <Filter>Parabot-Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\github\halflife\dlls\animation.cpp">
+      <Filter>HL-Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bot\bot.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\bot_client.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\bot_func.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\bot_weapons.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\engine.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="dlls\util.h">
+      <Filter>DLL-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\hl_classes.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\marker.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\parabot.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_action.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_cell.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_chat.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_combat.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_configuration.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_focus.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_global.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_goalfinder.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_goals.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_journey.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_kills.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_mapcells.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_mapgraph.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_navpoint.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_needs.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_observer.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_path.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_perception.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_roaming.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_sectors.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_vistable.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_weapon.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pb_weaponhandling.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\PBT_DynArray.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\pbt_priorityqueue.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\sounds.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="bot\utilityfuncs.h">
+      <Filter>Parabot-Header</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\checkvec.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\dynpq.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

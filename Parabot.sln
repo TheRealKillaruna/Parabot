@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Parabot", "Parabot.vcxproj", "{263EE599-FF25-434E-9924-4CC2C0E2DF00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		BC|Win32 = BC|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.BC|Win32.ActiveCfg = BC|Win32
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.BC|Win32.Build.0 = BC|Win32
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.Debug|Win32.ActiveCfg = Debug|Win32
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.Debug|Win32.Build.0 = Debug|Win32
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.Release|Win32.ActiveCfg = Release|Win32
+		{263EE599-FF25-434E-9924-4CC2C0E2DF00}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

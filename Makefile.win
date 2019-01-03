@@ -1,0 +1,147 @@
+# Project: Parabot
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = bot/bot.o bot/bot_client.o dlls/commands.o dlls/dll.o dlls/engine.o dlls/h_export.o dlls/linkfunc.o dlls/startframe.o dlls/util.o bot/marker.o bot/parabot.o bot/pb_action.o bot/pb_cell.o bot/pb_chat.o bot/pb_combat.o bot/pb_combatgoals.o bot/pb_configuration.o bot/pb_focus.o bot/pb_global.o bot/pb_goalfinder.o bot/pb_goals.o bot/pb_journey.o bot/pb_kills.o bot/pb_mapcells.o bot/pb_mapgraph.o bot/pb_mapimport.o bot/pb_navpoint.o bot/pb_needs.o bot/pb_observer.o bot/pb_path.o bot/pb_perception.o bot/pb_roaming.o bot/pb_sectors.o bot/pb_vistable.o bot/pb_weapon.o bot/pb_weaponhandling.o bot/pbt_dynarray.o bot/pbt_priorityqueue.o bot/sounds.o bot/utilityfuncs.o $(RES)
+LINKOBJ  = bot/bot.o bot/bot_client.o dlls/commands.o dlls/dll.o dlls/engine.o dlls/h_export.o dlls/linkfunc.o dlls/startframe.o dlls/util.o bot/marker.o bot/parabot.o bot/pb_action.o bot/pb_cell.o bot/pb_chat.o bot/pb_combat.o bot/pb_combatgoals.o bot/pb_configuration.o bot/pb_focus.o bot/pb_global.o bot/pb_goalfinder.o bot/pb_goals.o bot/pb_journey.o bot/pb_kills.o bot/pb_mapcells.o bot/pb_mapgraph.o bot/pb_mapimport.o bot/pb_navpoint.o bot/pb_needs.o bot/pb_observer.o bot/pb_path.o bot/pb_perception.o bot/pb_roaming.o bot/pb_sectors.o bot/pb_vistable.o bot/pb_weapon.o bot/pb_weaponhandling.o bot/pbt_dynarray.o bot/pbt_priorityqueue.o bot/sounds.o bot/utilityfuncs.o $(RES)
+LIBS =  -L"C:/Programme/Dev-Cpp/lib" -mwindows -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 
+INCS =  -I"C:/Programme/Dev-Cpp/include"  -I"utils" 
+CXXINCS =  -I"C:/Programme/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Programme/Dev-Cpp/include/c++/3.4.2"  -I"C:/Programme/Dev-Cpp/include"  -I"utils" 
+BIN  = Parabot.exe
+CXXFLAGS = $(CXXINCS) -D__GNUWIN32__ -W -finline-functions -DWIN32 -D_WINDOWS 
+CFLAGS = $(INCS) -D__GNUWIN32__ -W -finline-functions -DWIN32 -D_WINDOWS 
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Parabot.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Parabot.exe" $(LIBS)
+
+bot/bot.o: bot/bot.cpp
+	$(CPP) -c bot/bot.cpp -o bot/bot.o $(CXXFLAGS)
+
+bot/bot_client.o: bot/bot_client.cpp
+	$(CPP) -c bot/bot_client.cpp -o bot/bot_client.o $(CXXFLAGS)
+
+dlls/commands.o: dlls/commands.cpp
+	$(CPP) -c dlls/commands.cpp -o dlls/commands.o $(CXXFLAGS)
+
+dlls/dll.o: dlls/dll.cpp
+	$(CPP) -c dlls/dll.cpp -o dlls/dll.o $(CXXFLAGS)
+
+dlls/engine.o: dlls/engine.cpp
+	$(CPP) -c dlls/engine.cpp -o dlls/engine.o $(CXXFLAGS)
+
+dlls/h_export.o: dlls/h_export.cpp
+	$(CPP) -c dlls/h_export.cpp -o dlls/h_export.o $(CXXFLAGS)
+
+dlls/linkfunc.o: dlls/linkfunc.cpp
+	$(CPP) -c dlls/linkfunc.cpp -o dlls/linkfunc.o $(CXXFLAGS)
+
+dlls/startframe.o: dlls/startframe.cpp
+	$(CPP) -c dlls/startframe.cpp -o dlls/startframe.o $(CXXFLAGS)
+
+dlls/util.o: dlls/util.cpp
+	$(CPP) -c dlls/util.cpp -o dlls/util.o $(CXXFLAGS)
+
+bot/marker.o: bot/marker.cpp
+	$(CPP) -c bot/marker.cpp -o bot/marker.o $(CXXFLAGS)
+
+bot/parabot.o: bot/parabot.cpp
+	$(CPP) -c bot/parabot.cpp -o bot/parabot.o $(CXXFLAGS)
+
+bot/pb_action.o: bot/pb_action.cpp
+	$(CPP) -c bot/pb_action.cpp -o bot/pb_action.o $(CXXFLAGS)
+
+bot/pb_cell.o: bot/pb_cell.cpp
+	$(CPP) -c bot/pb_cell.cpp -o bot/pb_cell.o $(CXXFLAGS)
+
+bot/pb_chat.o: bot/pb_chat.cpp
+	$(CPP) -c bot/pb_chat.cpp -o bot/pb_chat.o $(CXXFLAGS)
+
+bot/pb_combat.o: bot/pb_combat.cpp
+	$(CPP) -c bot/pb_combat.cpp -o bot/pb_combat.o $(CXXFLAGS)
+
+bot/pb_combatgoals.o: bot/pb_combatgoals.cpp
+	$(CPP) -c bot/pb_combatgoals.cpp -o bot/pb_combatgoals.o $(CXXFLAGS)
+
+bot/pb_configuration.o: bot/pb_configuration.cpp
+	$(CPP) -c bot/pb_configuration.cpp -o bot/pb_configuration.o $(CXXFLAGS)
+
+bot/pb_focus.o: bot/pb_focus.cpp
+	$(CPP) -c bot/pb_focus.cpp -o bot/pb_focus.o $(CXXFLAGS)
+
+bot/pb_global.o: bot/pb_global.cpp
+	$(CPP) -c bot/pb_global.cpp -o bot/pb_global.o $(CXXFLAGS)
+
+bot/pb_goalfinder.o: bot/pb_goalfinder.cpp
+	$(CPP) -c bot/pb_goalfinder.cpp -o bot/pb_goalfinder.o $(CXXFLAGS)
+
+bot/pb_goals.o: bot/pb_goals.cpp
+	$(CPP) -c bot/pb_goals.cpp -o bot/pb_goals.o $(CXXFLAGS)
+
+bot/pb_journey.o: bot/pb_journey.cpp
+	$(CPP) -c bot/pb_journey.cpp -o bot/pb_journey.o $(CXXFLAGS)
+
+bot/pb_kills.o: bot/pb_kills.cpp
+	$(CPP) -c bot/pb_kills.cpp -o bot/pb_kills.o $(CXXFLAGS)
+
+bot/pb_mapcells.o: bot/pb_mapcells.cpp
+	$(CPP) -c bot/pb_mapcells.cpp -o bot/pb_mapcells.o $(CXXFLAGS)
+
+bot/pb_mapgraph.o: bot/pb_mapgraph.cpp
+	$(CPP) -c bot/pb_mapgraph.cpp -o bot/pb_mapgraph.o $(CXXFLAGS)
+
+bot/pb_mapimport.o: bot/pb_mapimport.cpp
+	$(CPP) -c bot/pb_mapimport.cpp -o bot/pb_mapimport.o $(CXXFLAGS)
+
+bot/pb_navpoint.o: bot/pb_navpoint.cpp
+	$(CPP) -c bot/pb_navpoint.cpp -o bot/pb_navpoint.o $(CXXFLAGS)
+
+bot/pb_needs.o: bot/pb_needs.cpp
+	$(CPP) -c bot/pb_needs.cpp -o bot/pb_needs.o $(CXXFLAGS)
+
+bot/pb_observer.o: bot/pb_observer.cpp
+	$(CPP) -c bot/pb_observer.cpp -o bot/pb_observer.o $(CXXFLAGS)
+
+bot/pb_path.o: bot/pb_path.cpp
+	$(CPP) -c bot/pb_path.cpp -o bot/pb_path.o $(CXXFLAGS)
+
+bot/pb_perception.o: bot/pb_perception.cpp
+	$(CPP) -c bot/pb_perception.cpp -o bot/pb_perception.o $(CXXFLAGS)
+
+bot/pb_roaming.o: bot/pb_roaming.cpp
+	$(CPP) -c bot/pb_roaming.cpp -o bot/pb_roaming.o $(CXXFLAGS)
+
+bot/pb_sectors.o: bot/pb_sectors.cpp
+	$(CPP) -c bot/pb_sectors.cpp -o bot/pb_sectors.o $(CXXFLAGS)
+
+bot/pb_vistable.o: bot/pb_vistable.cpp
+	$(CPP) -c bot/pb_vistable.cpp -o bot/pb_vistable.o $(CXXFLAGS)
+
+bot/pb_weapon.o: bot/pb_weapon.cpp
+	$(CPP) -c bot/pb_weapon.cpp -o bot/pb_weapon.o $(CXXFLAGS)
+
+bot/pb_weaponhandling.o: bot/pb_weaponhandling.cpp
+	$(CPP) -c bot/pb_weaponhandling.cpp -o bot/pb_weaponhandling.o $(CXXFLAGS)
+
+bot/pbt_dynarray.o: bot/pbt_dynarray.cpp
+	$(CPP) -c bot/pbt_dynarray.cpp -o bot/pbt_dynarray.o $(CXXFLAGS)
+
+bot/pbt_priorityqueue.o: bot/pbt_priorityqueue.cpp
+	$(CPP) -c bot/pbt_priorityqueue.cpp -o bot/pbt_priorityqueue.o $(CXXFLAGS)
+
+bot/sounds.o: bot/sounds.cpp
+	$(CPP) -c bot/sounds.cpp -o bot/sounds.o $(CXXFLAGS)
+
+bot/utilityfuncs.o: bot/utilityfuncs.cpp
+	$(CPP) -c bot/utilityfuncs.cpp -o bot/utilityfuncs.o $(CXXFLAGS)
